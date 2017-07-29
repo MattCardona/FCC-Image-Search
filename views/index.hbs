@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>FCC Image Search Abstraction Microservice</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="/assets/main.css">
+</head>
+<body>
+  <h2>Image Search Abstraction Microservice</h2>
+    <div class="userStory">
+    /api/imagesearch/cat?offset=1
+      <li>
+        You can pass a value after the /api/imagesearch/. Example search for a yorkie, you will pass this URL/api/imagesearch/<em>yorkie</em> . It will search for images related to your search, and it will return you a JSON response that will contain a images URLs, snippet, thumbnail, and context for a given search. You are also allowed to pass "?offset=" at the end of the url to paginate through the responses. Example URL/api/imagesearch/yorkie<em>?offset=2</em> .
+      </li>
+    </div>
+    <div class="exampleUsage">
+      <h3>Example usage: </h3>
+      <a href="" target="blank">herokuUrl/api/imagesearch/yorkie?offset=2</a><br>
+      <a href="" target="blank">herokuUrl/api/imagesearch/cat?offset=1</a>
+    </div>
+    <div class="exampleOutput">
+      <p>[
+    {
+        "url": "https://static.pexels.com/photos/104827/cat-pet-animal-domestic-104827.jpeg",
+        "snippet": "Cat Images · Pexels · Free Stock Photos",
+        "thumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTM1gyfoLrqcuU-k9NLR8njIcjpIqiVxIDWr8M7FZEOCATGgDSQrxX8EFo",
+        "context": "https://www.pexels.com/search/cat/"
+    },
+    {
+        "url": "https://cdn.pixabay.com/photo/2014/03/29/09/17/cat-300572_960_720.jpg",
+        "snippet": "Cat - Free images on Pixabay",
+        "thumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ24dDUovcRNeIUxHSk164w7IK_-vlqfSeac4hWkh8KCv6Zs32kuOFlb6M",
+        "context": "https://pixabay.com/en/photos/cat/"
+    }</p>
+    </div>
+
+    {{> footer }}
+</body>
+</html>
