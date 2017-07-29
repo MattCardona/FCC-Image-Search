@@ -26,17 +26,3 @@ app.listen(port, () => {
   console.log(`Listening to port : ${port}`);
 })
 
-//  https://www.googleapis.com/customsearch/v1
-//  api key for me = AIzaSyDCqb8QKmC-6Pi1jbXVGZRnDrwm9OZLCPE
-//  cx id = 017096797796684188476:eo9ax7sbxoe
-//
-// The following JSON parameters are used for this API:
-// q: specifies search text
-// num: specifies number of results. Requires an integer value between 1 and 10 (inclusive)
-// start: the "offset" for the results, which result the search should start at. Requires
-// an integer value between 1 and 101.
-// imgSize: the size of the image. I used "medium"
-// searchType: must be set to "image"
-// filetype: specifies the file type for the image. I used `"jpg", but you can leave this out if file extension doesn't matter to you.
-// key: an API key, obtained from https://console.developers.google.com/
-// cx: the custom search engine ID from the previous section
