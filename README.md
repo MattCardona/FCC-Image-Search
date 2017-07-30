@@ -13,7 +13,7 @@ Example usage:
 
 Example output:
 
-:thumbsup: [
+:thumbsup: <p>[
     {
         "url": "https://static.pexels.com/photos/104827/cat-pet-animal-domestic-104827.jpeg",
         "snippet": "Cat Images · Pexels · Free Stock Photos",
@@ -27,6 +27,7 @@ Example output:
         "context": "https://pixabay.com/en/photos/cat/"
     }
     ]
+    </p>
 
 :thumbsdown: Zero result please type another search.
 
