@@ -13,18 +13,18 @@ Example usage:
 
 Example output:
 
-:thumbsup: <p>[
+:thumbsup: [
     {
-        "url": "https://static.pexels.com/photos/104827/cat-pet-animal-domestic-104827.jpeg",
+        "url": \"https://static.pexels.com/photos/104827/cat-pet-animal-domestic-104827.jpeg\",
         "snippet": "Cat Images · Pexels · Free Stock Photos",
-        "thumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTM1gyfoLrqcuU-k9NLR8njIcjpIqiVxIDWr8M7FZEOCATGgDSQrxX8EFo",
-        "context": "https://www.pexels.com/search/cat/"
+        "thumbnail": \"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTM1gyfoLrqcuU-k9NLR8njIcjpIqiVxIDWr8M7FZEOCATGgDSQrxX8EFo\",
+        "context": \"https://www.pexels.com/search/cat/\"
     },
     {
-        "url": "https://cdn.pixabay.com/photo/2014/03/29/09/17/cat-300572720.jpg",
+        "url": \"https://cdn.pixabay.com/photo/2014/03/29/09/17/cat-300572720.jpg\",
         "snippet": "Cat - Free images on Pixabay",
-        "thumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ24dDUovcRNeIUxHSk164w7IK_-vlqfSeac4hWkh8KCv6Zs32kuOFlb6M",
-        "context": "https://pixabay.com/en/photos/cat/"
+        "thumbnail": \"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ24dDUovcRNeIUxHSk164w7IK_-vlqfSeac4hWkh8KCv6Zs32kuOFlb6M\",
+        "context": \"https://pixabay.com/en/photos/cat/\"
     }
     ]
     </p>
