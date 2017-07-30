@@ -1,9 +1,14 @@
 const request = require('request');
+const {Recent} = require('./../models/recent.js');
 
 var midd = (req, res, next) => {
-
   var q = req.params.q;
-  var start = req.query.offset;
+  var start;
+  if(req.query.offset){
+    start = req.query.offset;
+  }else{
+    start = req.query.offset = 1;
+  }
   var url = `https://www.googleapis.com/customsearch/v1?key=${process.env.API_KEY}&cx=${process.env.CX_KEY}&searchType=image&q=${encodeURIComponent(q)}&start=${start}`;
   var arr  = [];
   var obj = {};
@@ -19,7 +24,22 @@ var midd = (req, res, next) => {
             res.status(400).send('Zero result please type another search.');
           }
           else if(response.statusCode === 200){
-            // console.log(JSON.stringify(body, undefined, 2), 'this is jsonstringifiy');
+            var recent = new Recent({search: q});
+            var arr = [];
+            Recent.count({}).then((count) => {
+              return count;
+            }).then((count) => {
+              if(count === 5){
+                Recent.remove({}).then((success) => {
+                  recent.save();
+                });
+              }else{
+                recent.save().then((doc) => {
+                }).catch((err) => {
+                  res.status(400).send('ERROR: Error ocuured tryin to save your document.')
+                });
+              }
+            })
                 body.items.forEach((val, i) => {
                   obj.url = val.link;
                   obj.snippet = val.snippet;
