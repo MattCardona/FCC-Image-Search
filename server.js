@@ -25,13 +25,11 @@ app.get('/api/imagesearch/:q(*)', midd, (req, res) => {
 });
 
 app.get('/api/latest/imagesearch', (req, res) => {
-  //limit might not work as expected
   Recent.find({}).limit(5).then((docs) => {
     var filtered = [];
     docs.forEach((val) => {
       filtered.push(_.pick(val, ['search', 'createdAt']));
     });
-    // console.log(`This i sthe doc::: ${filtered}`);
     res.send(filtered);
   }).catch((err) => {
     res.status(400).send(err);
