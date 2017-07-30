@@ -15,10 +15,10 @@ Example output:
 
 :thumbsup: [
     {
-        "url": \"https://static.pexels.com/photos/104827/cat-pet-animal-domestic-104827.jpeg\",
+        "url": \"\https://static.pexels.com/photos/104827/cat-pet-animal-domestic-104827.jpeg\",
         "snippet": "Cat Images · Pexels · Free Stock Photos",
-        "thumbnail": \"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTM1gyfoLrqcuU-k9NLR8njIcjpIqiVxIDWr8M7FZEOCATGgDSQrxX8EFo\",
-        "context": \"https://www.pexels.com/search/cat/\"
+        "thumbnail": \"\https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTM1gyfoLrqcuU-k9NLR8njIcjpIqiVxIDWr8M7FZEOCATGgDSQrxX8EFo\",
+        "context": \"\https://www.pexels.com/search/cat/\"
     },
     {
         "url": \"https://cdn.pixabay.com/photo/2014/03/29/09/17/cat-300572720.jpg\",
