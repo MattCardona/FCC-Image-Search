@@ -25,7 +25,6 @@ var midd = (req, res, next) => {
           }
           else if(response.statusCode === 200){
             var recent = new Recent({search: q});
-            var arr = [];
             Recent.count({}).then((count) => {
               return count;
             }).then((count) => {
